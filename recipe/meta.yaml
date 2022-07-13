@@ -1,13 +1,13 @@
 {% set name = "pypng" %}
-{% set version = "0.0.20" %}
+{% set version = "0.0.21" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1032833440c91bafee38a42c38c02d00431b24c42927feb3e63b104d8550170b
+  url: https://gitlab.com/drj11/pypng/-/package_files/46033928/download
+  sha256: f12da57353b7f3924a2b1c7f35a932ae806ae1bc0e54f8d7a546e7d5b45965e7
 
 build:
   noarch: python
@@ -26,7 +26,7 @@ test:
     - png
 
 about:
-  home: https://github.com/drj11/pypng/
+  home: https://gitlab.com/drj11/pypng/
   license: MIT
   license_family: MIT
   license_file: LICENCE
