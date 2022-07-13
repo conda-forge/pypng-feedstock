@@ -32,7 +32,7 @@ about:
   home: https://gitlab.com/drj11/pypng/
   license: MIT
   license_family: MIT
-  license_file: LICENCE
+  license_file: {{ name }}-{{ version }}/LICENCE
   summary: 'Pure Python PNG image encoder/decoder'
 
 extra:
