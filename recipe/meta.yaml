@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://gitlab.com/drj11/pypng/-/archive/pypng-{{ version }}/pypng-pypng-{{ version }}.tar.bz2
-  sha256: 739c433ba96f078315de54c0db975aee537cbc3e1d0ae4ed9aab0ca1e427e2c1
+  sha256: cbcf24b25951bc8694cdbcf67ffeda6294b52109db3d02a90dd1a0ade69ebcaa
 
 build:
   noarch: python
