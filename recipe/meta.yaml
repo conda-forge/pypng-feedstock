@@ -1,21 +1,18 @@
 {% set name = "pypng" %}
-{% set version = "0.0.21" %}
+{% set version = "0.20220715.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://gitlab.com/drj11/pypng/-/package_files/46033928/download
-  sha256: f12da57353b7f3924a2b1c7f35a932ae806ae1bc0e54f8d7a546e7d5b45965e7
+  url: https://gitlab.com/drj11/pypng/-/archive/pypng-{{ version }}/pypng-pypng-{{ version }}.tar.bz2
+  sha256: 739c433ba96f078315de54c0db975aee537cbc3e1d0ae4ed9aab0ca1e427e2c1
 
 build:
   noarch: python
   number: 0
-  script:
-    - "zcat download | tar xvf -"
-    - "cd {{ name }}-{{ version }}"
-    - "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
