@@ -29,8 +29,8 @@ about:
   home: https://gitlab.com/drj11/pypng/
   license: MIT
   license_family: MIT
-  license_file: {{ name }}-{{ version }}/LICENCE
-  summary: 'Pure Python PNG image encoder/decoder'
+  license_file: LICENCE
+  summary: Pure Python PNG image encoder and decoder
 
 extra:
   recipe-maintainers:
